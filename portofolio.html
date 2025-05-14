@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<!---AOS CSS-->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+<!--AOS JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+        document.addEventListener("DOMContentLoaded", function() {
+        AOS.init({
+            duration: 1000, 
+            once: true
+        });
+    });
+</script>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio Website</title>
+
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+        <!-- AOS CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+        <link rel="stylesheet" href="portofolio.css">
+
+    </head>
+
+    <body>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #0b1d3a;">
+            <div class="container">
+                <a class="navbar-brand" href="#home">MYPortfolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Project</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- HOME -->
+        <section id="home" class="d-flex align-items-center">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- Kiri: Konten -->
+                    <div class="col-md-6 order-2 order-md-1 mb-4" data-aos="fade-right" data-aos-duration="1500">
+                        <h1>Hey I'm <span style="color: #7df9ff;">Septine Mar Atus Shofiyah</span></h1>
+                        <h4>I'm a <span class="typewriter-text">Developer</span></h4>
+                        <p data-aos="flip-down" data-aos-delay="500">Saya seorang pelajar yang masih pemula di bidang desain grafis, pengembangan game dan pemrograman, dengan minat besar untuk terus belajar dan berkembang.</p>
+
+                        <div class="mt-4">
+                            <a href="#"><i class="fa-brands fa-instagram fa-2x me-3"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook fa-2x me-3"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter fa-2x me-3"></i></a>
+                        </div>
+
+                        <div class="btn-group" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="1800">
+                            <a href="cv-septine.pdf" download>
+                                <button>Download CV</button>
+                            </a>
+                            <button onclick="window.location.href='kuis.html'">Kuis</button>
+                        </div>
+                    </div>
+
+                    <!-- Kanan: Foto -->
+                    <div class="col-md-6 order-1 order-md-2 text-center mb-4" data-aos="zoom-in" data-aos-duration="3000">
+                        <div class="glow-frame-wrapper">
+                            <div class="glow-frame">
+                                <img src="SeptineGIM2.png" alt="Foto Septine" class="perfect-circle">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--About-->
+        <section id="about" class="py-5 bg-white" data-aos="fade-right">
+            <div class="container py-5">
+                <div class="row"> 
+                    <div class="col-lg-6 mx-auto text-center">
+                        <h2>About Me</h2>
+                        <p>Saya adalah seorang yang antusias dalam dunia kreatif digital, dengan minat mendalam pada pengembangan game, desain grafis, dan animasi 3D.Ketertarikan saya berakar dari keinginan untuk menciptakan pengalaman interaktif dan visual yang imersif.Dengan semangat untuk terus berkembang, saya selalu terbuka terhadap tantangan baru yang dapat mengasah keterampilan dan memperluas wawasan di industri kreatif. </p>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <!--Resume-->
+                    <div class="col-lg-6">
+                        <h3>Resume</h3>
+                        <p><strong>Web Developer</strong></p>
+                        <p>Membuat halaman web sederhana menggunakan HTML, CSS, dan dasar JavaScript dengan struktur responsif dan pengelolaan file proyek yang teratur.</p>
+                        <p><strong>Graphic Designer & 3D</strong></p>
+                        <p>Membuat model karakter dan objek 3D, menciptakan animasi sederhana, serta mengatur tekstur, pencahayaan, dan rendering untuk menghasilkan visual yang menarik. Selain itu, mendesain poster, logo, ilustrasi digital,menggunakan Adobe Photoshop dan CorelDRAW untuk berbagai kebutuhan visual cetak maupun digital.</p>
+                        <p><strong>Game Developer</strong> - Unity</p>
+                        <p>Mengembangkan game 3D skala kecil menggunakan Unity dengan kontrol karakter dan lingkungan interaktif, serta menggabungkan aset untuk menciptakan pengalaman bermain yang menyeluruh.</p>
+                    </div>
+
+                    <div class="col-lg-6 mx-auto text-center">
+                        <h2 class="text-center mb-4">Skill</h2>
+                        <p>HTML</p>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-success" style="width: 85%;">85%</div>
+                        </div>
+                        <p>CSS</p>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-warning" style="width: 80%;">80%</div>
+                        </div>
+                        <p>JavaScript</p>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-danger" style="width: 75%;">75%</div>
+                        </div>
+                        <p>Graphic Design</p>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-primary" style="width: 90%;">90%</div>
+                        </div>
+                        <p>Unity</p>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-danger" style="width: 75%;">75%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- education -->
+        <section class="education" id="education" data-aos="fade-up">
+            <h2 class="heading">Education</h2>
+
+            <div class="timeline-items">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                        <div class="timeline-date" data-aos="zoom-in">2014</div>
+                        <div class="timeline-content" data-aos="fade-right">
+                            <h3>SDN 1 Sanan</h3>
+                            <p>Saya pernah menempuh pendidikan di SDN 1 Sanan, mulai dari awal pendaftaran pada tahun 2014 dan lulus pada tahun 2020. Selama enam tahun bersekolah di sana, saya mendapatkan banyak pengalaman serta ilmu dasar yang menjadi fondasi penting dalam perjalanan pendidikan saya selanjutnya.</p>
+                        </div>
+                    
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                        <div class="timeline-date" data-aos="zoom-in">2020</div>
+                        <div class="timeline-content" data-aos="fade-left">
+                            <h3>SMPN 1 Pace</h3>
+                            <p>Saya melanjutkan pendidikan di SMPN 1 Pace mulai tahun 2020 dan lulus pada tahun 2023. Di sana, saya tidak hanya belajar berbagai mata pelajaran, tetapi juga mengembangkan kedisiplinan dan keterampilan sosial yang penting untuk jenjang pendidikan berikutnya.</p>
+                        </div>
+                    
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                        <div class="timeline-date" data-aos="zoom-in">2023</div>
+                        <div class="timeline-content" data-aos="fade-right">
+                            <h3>SMKN 1 Nganjuk</h3>
+                            <p>Saya melanjutkan pendidikan di SMKN 1 Nganjuk pada tahun 2023 dengan mengambil jurusan Pengembangan Gim. Di jurusan ini, saya mempelajari berbagai keterampilan seperti pemrograman web, pembuatan game menggunakan Unity, desain grafis, serta 3D modeling. </p>
+                        </div>
+                    
+                </div>
+            </div>
+        </section>
+   
+        <!--Project SEction-->
+        <section id="portfolio" class="py-5 bg-light">
+            <div class="container">
+                <h2  class="text-center mb-5" data-aos="fade-up">My Project</h2>
+                <!--Unity-->
+                <h3 class="mb-4 text-center mt-5" data-aos="fade-right">Unity</h3>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in">
+                        <div class="card">
+                            <a href="unity1.png" data-lightbox="portfolio" data-title="Project 1">
+                                <img src="unity1.png" class="card-img-top" alt="Project 1">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Project 1</h5>
+                                <p class="card-text">Sebuah game Unity bergaya minimalis dengan nuansa malam yang tenang dan atmosfer misterius.Game ini mengusung konsep survival dengan mekanik sederhana namun menegangkan,setiap gerakan menjadi pertaruhan hidup dan mati.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="card">
+                            <a href="unity3.png" data-lightbox="portfolio" data-title="Project 2">
+                                <img src="unity3.png" class="card-img-top" alt="Project 2">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Project 2</h5>
+                                <p class="card-text">Sososk petualang yang berlari dan melompat lincah,menaklukan rintangan alam.Setiap lompatan adalah tarian kebebasan di bawah langit biru, di antara heningnya hutan geometris</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="card">
+                            <a href="unity2.png" data-lightbox="portfolio" data-title="Project 3">
+                                <img src="unity2.png" class="card-img-top" alt="Project 3">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Project 3</h5>
+                                <p class="card-text">Di dunia kubikal yang melayang dalam ruang putih,setiap kotak tersembunyi membawa harapan atau petaka.Sentuhlah dengan cermat setiap temuan menghadirkan poin berharga.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--photoshop-->
+                <h3 class="mb-4 text-center mt-5" data-aos="fade-right">Photoshop</h3>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in">
+                        <div class="card">
+                            <a href="photoshop1.jpg" data-lightbox="portfolio" data-title="Project 1">
+                                <img src="photoshop1.jpg" class="card-img-top" alt="Project 1">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Project 1</h5>
+                                <p class="card-text">Sebuah desain bertema fantasi gelap, menampilkan kota yang terbakar dalam cahaya neon dan langit kosmik, dengan sosok misterius berdiri di bawah tatapan tajam makhluk bermata api—sebuah dunia antara kehancuran dan kemegahan.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="card">
+                            <a href="photoshop2.jpg" data-lightbox="portfolio" data-title="Project 2">
+                                <img src="photoshop2.jpg" class="card-img-top" alt="Project 2">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Project 2</h5>
+                                <p class="card-text">"Battle Ground" menghadirkan atmosfer peperangan epic, dengan tatapan tajam seorang pejuang yang membelah asap dan bara.Dunia hancur membisikkan kisah perlawanan di tengah kehancuran dan membangkitkan semangat bertahan hidup.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="card">
+                            <a href="photoshop3.jpg" data-lightbox="portfolio" data-title="Project 3">
+                                <img src="photoshop3.jpg" class="card-img-top" alt="Project 3">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Project 3</h5>
+                                <p class="card-text">Mengisahkan kebangkitan gelap di dunia yang terbakar amarah dan sihir.Sosok berjubah membawa cahaya dan harapan kecil di tengah kehancuran, sementara bayangan kutukan mengintai dari balik asap dan api</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--blender-->
+                <h3 class="mb-4 text-center mt-5" data-aos="fade-right">Blender</h3>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in">
+                        <div class="card">
+                            <a href="blender3.png" data-lightbox="portfolio" data-title="Project 1">
+                                <img src="blender3.png" class="card-img-top" alt="Project 1">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Project 1</h5>
+                                <p class="card-text">Topi penyihir merah dan tongkat bercahaya ini memancarkan aura magis, membangkitkan nuansa dunia sihir klasik dengan sentuhan modern dan penuh pesona.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="card">
+                            <a href="blender2.png" data-lightbox="portfolio" data-title="Project 2">
+                                <img src="blender2.png" class="card-img-top" alt="Project 2">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Project 2</h5>
+                                <p class="card-text">Dua kaca pembesar bergagang biru bertekstur di letakan di atas meja dengan taplak bermotif kotak kotak,dipadukan dengan latar interior modern yang menciptakan nuansa elegan dan realistis.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="card">
+                            <a href="blender1.png" data-lightbox="portfolio" data-title="Project 3">
+                                <img src="blender1.png" class="card-img-top" alt="Project 3">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Project 3</h5>
+                                <p class="card-text">Desain 3D ini menampilkan harmoni antara bentuk elegan dan material mengilap,perpaduan gelas modern dan anyaman digital dalam suasana alam yang tenang.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--kontak-->
+        <section id="contact" class="d-flex align-items-center text-center text-white" style="padding: 80px 0; background: linear-gradient(to right, #171e33, #4574b1, #2c5364);" data-aos="fade-in">
+            <div class="container" data-aos="fade-up">
+                <h2 class="text-center">Contact Me</h2>
+                <div class="row">
+                    <div class="col-lg-6 mx-auto text-center">
+                        <p><i class="fas fa-envelope"></i> septinemara50f1@gmail.com</p>
+                        <p><i class="fas fa-phone"></i> +62 858-5635-0723</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Dsn.Sanan-DS.Sana-Kec.Pace-Kab.Nganjuk</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Footer-->
+        <footer class="d-flex align-items-center text-center text-white" style="background: linear-gradient(to right, #171e33, #4574b1, #2c5364);">
+            <div class="container">
+                <p>&copy; 2025 MyPortfolio(septine). All rights reserved.</p>
+            </div>
+        </footer>
+
+        <script>
+            function setQuizOpened() {
+                localStorage.setItem("openedFromNavbar", "true");
+            }
+
+            document.addEventListener("DOMContentLoaded", function () {
+                const startBtn = document.getElementById("startQuizBtn");
+                const quizContainer = document.getElementById("quizContainer");
+                const quizFrame = document.getElementById("quizFrame");
+
+                startBtn.addEventListener("click", function () {
+                    quizContainer.style.display = "block";
+                    quizFrame.src = "kuis.html";
+                    startBtn.style.display = "none";
+                });
+
+                window.addEventListener("message", function (event) {
+                if (event.data === "kuisSelesai") {
+                    quizFrame.src = "";
+                    quizContainer.style.display = "none";
+                    startBtn.style.display = "inline-block";
+                }
+                });
+            });
+        </script>
+        
+        <script src="portofolio.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/js/lightbox-plus-jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    </body>
+</html>

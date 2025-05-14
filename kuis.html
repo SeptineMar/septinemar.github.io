@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Kuis Interaktif</title>
+    <link rel="stylesheet" href="kuis.css">
+</head>
+
+<body>
+    <!-- Tombol Kembali ke Home -->
+    <a href="portofolio.html" id="back-to-home" style="
+        display: inline-block;
+        margin: 20px;
+        padding: 10px 20px;
+        background-color: #0b1d3a;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        position: absolute;
+        top: 20px;
+        left: 20px;">
+        ← Home
+    </a>
+
+
+    <h1>Kuis Sejarah Indonesia</h1>
+    <div id="kuis-container">
+        <div id="info-soal"></div> <!-- Ini akan ditambahkan via JS -->
+        <div id="progress-container">
+            <div id="progress-bar"></div>
+        </div>
+        <div id="soal"></div>
+        <div id="jawaban"></div>
+        <div id="hasil"></div>
+        <div id="timer"></div>
+    </div>
+    <!-- Di akhir kuis.html -->
+    <button id="selesaiBtn" class="tombol-kuis" style="display: none;" onclick="window.parent.postMessage('kuisSelesai', '*')">Selesai</button>
+
+    
+    <audio id="benarSound" src="benar.mp3"></audio>
+    <audio id="salahSound" src="salah.mp3"></audio>
+
+    <script src="kuis.js"></script>
+</body>
+
+</html>

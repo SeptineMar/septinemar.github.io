@@ -1,0 +1,136 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #44c4ff, #ffffff);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+#kuis-container {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#info-soal {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #4994f7;
+}
+
+#timer {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    color: red;
+}
+
+#soal {
+    font-size: 1.4em;
+    margin: 20px 0;
+    color: #222;
+}
+
+#jawaban {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#jawaban button {
+    background-color: #227bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#jawaban button:hover {
+    background-color: #4b94f3;
+    transform: scale(1.05);
+}
+
+#hasil {
+    margin-top: 25px;
+    font-size: 1.3em;
+    color: #333;
+    font-weight: bold;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+#progress-container {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    height: 20px;
+}
+
+#progress-bar {
+    height: 100%;
+    background-color: #265df3;
+    width: 100%;
+    transition: width 1s linear;
+}
+
+body.dark {
+    background: linear-gradient(135deg, #2c3e50, #258afd); 
+    color: white;
+}
+
+body.dark #kuis-container {
+    background-color: #2d2d2d; 
+}
+
+body.dark #jawaban button {
+    background-color: #3498db; 
+}
+
+body.dark #jawaban button:hover {
+    background-color: #2980b9; 
+}
+
+body.dark h1, body.dark #soal, body.dark #info-soal, body.dark #timer, body.dark #hasil {
+    color: white; 
+}
+
+body.dark #progress-container {
+    background-color: #34495e; 
+}
+
+body.dark #progress-bar {
+    background-color: #2980b9; 
+}
+
+.tombol-kuis {
+    padding: 10px 20px;
+    background-color: #0b1d3a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
