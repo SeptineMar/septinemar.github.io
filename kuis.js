@@ -149,7 +149,7 @@ tombolDarkMode.addEventListener("click", () => {
 });
 
 document.getElementById("selesaiBtn").addEventListener("click", () => {
-    window.location.href = "portofolio.html"; // atau "portofolio.html" jika itu halaman utama
+    window.location.href = "index.html"; // atau "portofolio.html" jika itu halaman utama
 });
 
 tampilkanSoal();
